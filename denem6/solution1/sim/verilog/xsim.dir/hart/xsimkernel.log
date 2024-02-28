@@ -1,0 +1,7 @@
+Running: xsim.dir/hart/xsimk -simmode gui -wdb hart.wdb -simrunnum 0 -socket 45755
+Design successfully loaded
+Design Loading Memory Usage: 23876 KB (Peak: 24176 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 118684 KB (Peak: 163144 KB)
+Simulation CPU Usage: 2850 ms

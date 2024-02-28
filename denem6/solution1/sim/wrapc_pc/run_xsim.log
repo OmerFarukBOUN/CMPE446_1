@@ -1,0 +1,193 @@
+0 0x500113
+0x0
+4 0x0a10093
+0x0f
+8 0x0c00393
+0x0f
+c 0x53f093
+0x4
+10 0x0a00493
+0x4
+14 0x34e093
+0x0b
+18 0x0a00593
+0x0b
+1c 0x55c093
+0x0f
+20 0x500693
+0x0f
+24 0x269093
+0x14
+28 0x1400793
+0x14
+2c 0x37d093
+0x2
+30 -0x13ff76d
+0x2
+34 0x4028d093
+-0x5
+38 -0x4ff66d
+-0x5
+3c 0x39a093
+0x1
+40 0x7ff00a93
+0x1
+44 0x2ab093
+0x0
+48 0x2b3
+0x0
+4c 0x328293
+0x0
+50 0x1b3
+0x0
+54 0x518193
+0x0
+58 0x5180b3
+0x08
+5c 0x233
+0x08
+60 0x0a20213
+0x08
+64 0x405200b3
+0x7
+68 0x3b3
+0x7
+6c 0x0c38393
+0x7
+70 0x53f0b3
+0x0
+74 0x4b3
+0x0
+78 0x0a48493
+0x0
+7c 0x54e0b3
+0x0b
+80 0x5b3
+0x0b
+84 0x0a58593
+0x0b
+88 0x55c0b3
+0x09
+8c 0x6b3
+0x09
+90 0x568693
+0x09
+94 0x5690b3
+0x28
+98 0x7b3
+0x28
+9c 0x1478793
+0x28
+a0 0x57d0b3
+0x2
+a4 0x08b3
+0x2
+a8 -0x137776d
+0x2
+ac 0x4058d0b3
+-0x3
+b0 0x09b3
+-0x3
+b4 -0x46766d
+-0x3
+b8 0x59a0b3
+0x1
+bc 0x0ab3
+0x1
+c0 0x7ffa8a93
+0x1
+c4 0x5ab0b3
+0x0
+Vivado Simulator v2023.2.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/omerfaruk/tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hart_top glbl -Oenable_linking_all_libraries -prj hart.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_17 -L floating_point_v7_0_22 --lib ieee_proposed=./ieee_proposed -s hart -debug all 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/hart_rf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart_rf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/hart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/hart_OP_AL_32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart_OP_AL_32I
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/hart.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_hart_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omerfaruk/Projects/okul/denem6/denem6/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.hart_rf_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.hart_OP_AL_32I
+Compiling module xil_defaultlib.hart
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_hart_top
+Compiling module work.glbl
+Built simulation snapshot hart
+
+****** xsim v2023.2.2 (64-bit)
+  **** SW Build 4126759 on Thu Feb  8 23:52:05 MST 2024
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+start_gui
+0 0x500113
+4 0x0a10093
+8 0x0c00393
+c 0x53f093
+10 0x0a00493
+14 0x34e093
+18 0x0a00593
+1c 0x55c093
+20 0x500693
+24 0x269093
+28 0x1400793
+2c 0x37d093
+30 -0x13ff76d
+34 0x4028d093
+38 -0x4ff66d
+3c 0x39a093
+40 0x7ff00a93
+44 0x2ab093
+48 0x2b3
+4c 0x328293
+50 0x1b3
+54 0x518193
+58 0x5180b3
+5c 0x233
+60 0x0a20213
+64 0x405200b3
+68 0x3b3
+6c 0x0c38393
+70 0x53f0b3
+74 0x4b3
+78 0x0a48493
+7c 0x54e0b3
+80 0x5b3
+84 0x0a58593
+88 0x55c0b3
+8c 0x6b3
+90 0x568693
+94 0x5690b3
+98 0x7b3
+9c 0x1478793
+a0 0x57d0b3
+a4 0x08b3
+a8 -0x137776d
+ac 0x4058d0b3
+b0 0x09b3
+b4 -0x46766d
+b8 0x59a0b3
+bc 0x0ab3
+c0 0x7ffa8a93
+c4 0x5ab0b3

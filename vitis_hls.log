@@ -1,0 +1,66 @@
+INFO: [HLS 200-10] Running '/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'omerfaruk' on host 'DarkChocolate' (Linux_x86_64 version 6.5.0-21-generic) on Wed Feb 28 07:28:12 +03 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/omerfaruk/Projects/okul/denem6'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script '/home/omerfaruk/Projects/okul/denem6/denem6/solution_illegal/cosim.tcl'
+INFO: [HLS 200-1510] Running: source /home/omerfaruk/Projects/okul/denem6/denem6/solution_illegal/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project denem6 
+INFO: [HLS 200-10] Opening project '/home/omerfaruk/Projects/okul/denem6/denem6'.
+INFO: [HLS 200-1510] Running: set_top hart 
+INFO: [HLS 200-1510] Running: add_files OP_AL_32I.cpp 
+INFO: [HLS 200-10] Adding design file 'OP_AL_32I.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files hart.cpp 
+INFO: [HLS 200-10] Adding design file 'hart.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files mem.cpp 
+INFO: [HLS 200-10] Adding design file 'mem.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files parameters.hpp 
+INFO: [HLS 200-10] Adding design file 'parameters.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_hart.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'test_hart.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_illegal -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/omerfaruk/Projects/okul/denem6/denem6/solution_illegal'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: source ./denem6/solution_illegal/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/omerfaruk/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_hart.cpp
+   Compiling hart.cpp_pre.cpp.tb.cpp
+   Compiling mem.cpp_pre.cpp.tb.cpp
+   Compiling OP_AL_32I.cpp_pre.cpp.tb.cpp
+   Compiling test_hart.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hart_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+0 0x500093
+4 0x0
+Illegal Opcode!
+ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '255'.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 15.98 seconds. CPU system time: 1.97 seconds. Elapsed time: 22.17 seconds; current allocated memory: 11.262 MB.
+command 'ap_source' returned error code
+    while executing
+"source /home/omerfaruk/Projects/okul/denem6/denem6/solution_illegal/cosim.tcl"
+    invoked from within
+"hls::main /home/omerfaruk/Projects/okul/denem6/denem6/solution_illegal/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 17.77 seconds. Total CPU system time: 2.29 seconds. Total elapsed time: 24.18 seconds; peak allocated memory: 243.738 MB.
